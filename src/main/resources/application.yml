@@ -1,0 +1,49 @@
+server:
+  port: 3000
+
+# feign
+feign.httpclient.enabled: true
+
+
+
+# OAUTH2
+kakao:
+  authUrl: https://kauth.kakao.com/oauth/token
+  userApiUrl: https://kapi.kakao.com/v2/user/me
+  restapiKey: 3b75cec75412398ceb51731cbc6245f7
+  redirectUrl: http://localhost:3000/callback/login
+  clientSecret: TmkVagjXAZgQtXIHv5yjeK2gux262jfz
+
+naver:
+  authUrl: https://nid.naver.com/oauth2.0/token
+  userApiUrl: https://openapi.naver.com/v1/nid/me
+  restapiKey: 64Fvy9Yz8nH5fQ7tq6Rv
+  redirectUrl: http://localhost:3000/callback/login/naver
+  clientSecret: liQpIXG4aB
+
+google:
+  authUrl: https://oauth2.googleapis.com/token
+  userApiUrl: https://www.googleapis.com/oauth2/v1/userinfo
+  restapiKey: 933377612459-31tcst28s47iruldkhc5l4l4ftk7sf4e.apps.googleusercontent.com
+  redirectUrl: http://localhost:3000/callback/login/google
+  clientSecret: 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
+  scope: email profile openid
+
+github:
+  authUrl: https://github.com/login/oauth/access_token
+  userApiUrl: https://api.github.com/user
+  restapiKey: b0bdb15c99061dcf765d
+  redirectUrl: http://localhost:3000/callback/login/github
+  clientSecret: 97cd362efb70efa886a27baf504efe6ad84e26f4
+
+facebook:
+  authUrl: https://graph.facebook.com/v17.0/oauth/access_token
+  userApiUrl: https://graph.facebook.com/me
+  restapiKey: 172713918795310
+  redirectUrl: http://localhost:3000/callback/login/facebook
+  clientSecret: 80dde74674fba0ddad9f2464394157fc
+
+
+logging:
+  level:
+    com.example.kakaologin: debug
