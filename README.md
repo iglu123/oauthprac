@@ -13,3 +13,18 @@ RestAPI 명세서 : https://developers.kakao.com/docs/latest/ko/kakaologin/rest-
 5. 이 accessToken을 통해서, 이제 kakao에서 제공하는 서비스 API들을 사용할 수 있게 됩니다.
 6. 예를 들어 유저에 대한 정보를 가져올 수 있는 api는 `https://kapi.kakao.com/v2/user/me`와 같은 도메인에 각 요청을 보낼 때 Authorization 필드에 Bearer 타입으로 accessToken을 넣어주면 됩니다. `'Authorization' : "Bearer {accessToken}"`
 7. 이 예제 프로젝트는 필수로 닉네임을 받고, 성별, 생일, 이메일 등은 선택적으로 받을 수 있도록 구현한 Simple한 예제입니다.
+
+설명하기(전체 프로세스) 금요일 6/9
+--------
+중요한건 어떤 프로세스로 움직이는지
+---------
+
+공통모듈-- 질문 많이 하기!!
+
+여러 곳에서 공통으로 쓸 수 있도록 후속처리할 수 있도록
+
+다음주까지
+
+OAuth 와 JWT의 차이
+
+왜 OAuth에서 JWT를 쓰는가
